@@ -16,7 +16,7 @@ const Form = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/sendToZapier", {  // ✅ Correct API path
+      const response = await fetch("/api/sendToZapier", {  
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
